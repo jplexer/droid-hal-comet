@@ -28,6 +28,11 @@ Requires: droid-system
 /sdcard\
 %{nil}
 
+%define android_config \
+#define __availability__(...)\
+#define __ANDROID_MIN_SDK_VERSION__ 36\
+%{nil}
+
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
