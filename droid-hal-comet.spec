@@ -29,8 +29,10 @@ Requires: droid-system
 %{nil}
 
 %define android_config \
-#define __availability__(...)\
 #define __ANDROID_MIN_SDK_VERSION__ 36\
+#include <android/versioning.h>\
+#undef __BIONIC_AVAILABILITY\
+#define __BIONIC_AVAILABILITY(...)\
 %{nil}
 
 %include rpm/dhd/droid-hal-device.inc
