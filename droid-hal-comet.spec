@@ -18,7 +18,6 @@
 # On Android 8+ the system partition is (intended to be) mounted on /.
 %define makefstab_skip_entries / /odm /product /system /system_ext /vendor
 
-Requires: droid-system
 
 %define straggler_files \
 /adb_keys\
