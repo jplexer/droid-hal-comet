@@ -9,7 +9,7 @@
 
 %define droid_target_aarch64 1
 
-#%define installable_zip 1
+#define installable_zip 1
 
 %define enable_dtbo_update 1
 %define enable_init_boot_update 1
